@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#backBtn {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#dailyBtn {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#picCont {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	flex-direction: row-reverse;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+#picCont img {
+	height: 200px;
+	cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+  background: black;
+  color: white;
+	font-size: 25px;
+	font-weight: bold;
+  border: 2px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.showUpImg {
+	height: 60%;
+}
